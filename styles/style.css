@@ -31,6 +31,7 @@
 .container {
 	margin-inline: auto;
 	margin-block: 0;
+	max-inline-size: 700px;
 }
 
 .header {
@@ -61,3 +62,18 @@
 	font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
+figure {
+	/* width: 100%; */
+	padding: 0;
+	margin: 0;
+}
+
+.card__image {
+	display: block;
+	margin: 0;
+	padding: 0;
+	object-fit: cover;
+	inline-size: 100%;
+	block-size: 100%;
+	/* max-block-size: 100%; */
+}
