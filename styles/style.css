@@ -11,6 +11,14 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
+	min-inline-size: 320px;
+	min-block-size: 100dvb;
+	font-family: var(--accent-font, sans-serif), sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+	.page {
+		font-family: var(--main-font, sans-serif), sans-serif;
+		font-variation-settings: 'wght' var(--card-font-width-text, 400);
+	}
 }
