@@ -85,7 +85,7 @@
 	font-size: 14px;
 	text-transform: uppercase;
 	/* !!!!! */
-	color: red;
+	/* color: red; */
 }
 
 .card__image {
@@ -160,8 +160,32 @@
 		font-variation-settings: 'wght' var(--card-font-width-text, 400);
 	}
 
-	/* .image_label {
-		font-family: var(--accent-font, sans-serif);
-		font-variation-settings: 'wght' var(--card-font-width-text, 400);
-	} */
+	.image_label {
+		/* font-family: var(--accent-font, sans-serif);
+		font-variation-settings: 'wght' var(--card-font-width-text, 400); */
+
+		text-shadow: -1px 0 var(--image-label-color-stroke, #fff),
+			0 1px var(--image-label-color-stroke, #fff),
+			1px 0 var(--image-label-color-stroke, #fff),
+			0 -1px var(--image-label-color-stroke, #fff);
+	}
+}
+
+@supports (
+	(
+			text-stroke: var(--image-label-width-stroke, 0.05em)
+				var(--image-label-color-stroke, #fff)
+		)
+		or
+		(
+			-webkit-text-stroke: var(--image-label-width-stroke, 0.05em) var(--image-label-color-stroke, #fff)
+		)
+) {
+	.image_label {
+		-webkit-text-stroke: var(--image-label-width-stroke, 0.05em)
+			var(--image-label-color-stroke, #fff);
+		text-stroke: var(--image-label-width-stroke, 0.05em)
+			var(--image-label-color-stroke, #fff);
+		text-shadow: none;
+	}
 }

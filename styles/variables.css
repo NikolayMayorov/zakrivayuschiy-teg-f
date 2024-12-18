@@ -6,6 +6,8 @@
 	--card-font-width-title: 700;
 	--header-bg-color: #fff;
 	--border-color: #000;
+	--image-label-width-stroke: 0.05em;
+	--image-label-color-stroke: #fff;
 
 	/* --font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); */
 }
