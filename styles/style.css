@@ -62,7 +62,7 @@
 	flex-direction: column;
 	gap: 25px; */
 	/* margin-block-start: 100px; */
-	margin-block-end: 54px;
+	margin-block-end: 51px;
 	border: 2px solid var(--border-color, #000);
 	font-size: 18px;
 	background-color: #fff;
@@ -155,8 +155,8 @@
 }
 
 .floppy-img {
-	inline-size: 28px;
-	aspect-ratio: 28px;
+	inline-size: 21px;
+	block-size: 21px;
 }
 
 .button-save {
@@ -172,45 +172,45 @@
 @supports (font-variation-settings: normal) {
 	.page {
 		font-family: var(--main-font, sans-serif);
-		font-variation-settings: 'wght' var(--card-font-width-text, 400);
+		font-variation-settings: 'wght' var(--card-font-text-width, 400);
 	}
 
 	.card__title {
-		font-variation-settings: 'wght' var(--card-font-width-title, 700);
+		font-variation-settings: 'wght' var(--card-font-title-width, 700);
 	}
 
 	.image_label,
 	.button__text {
 		font-family: var(--accent-font, sans-serif);
-		font-variation-settings: 'wght' var(--card-font-width-text, 400);
+		font-variation-settings: 'wght' var(--card-font-text-width, 400);
 	}
 
 	.image_label {
 		/* font-family: var(--accent-font, sans-serif);
-		font-variation-settings: 'wght' var(--card-font-width-text, 400); */
+		font-variation-settings: 'wght' var(--card-font-text-width, 400); */
 
-		text-shadow: -1px 0 var(--image-label-color-stroke, #fff),
-			0 1px var(--image-label-color-stroke, #fff),
-			1px 0 var(--image-label-color-stroke, #fff),
-			0 -1px var(--image-label-color-stroke, #fff);
+		text-shadow: -1px 0 var(--image-label-stroke-color, #fff),
+			0 1px var(--image-label-stroke-color, #fff),
+			1px 0 var(--image-label-stroke-color, #fff),
+			0 -1px var(--image-label-stroke-color, #fff);
 	}
 }
 
 @supports (
 	(
-			text-stroke: var(--image-label-width-stroke, 0.05em)
-				var(--image-label-color-stroke, #fff)
+			text-stroke: var(--image-label-stroke-width, 0.05em)
+				var(--image-label-stroke-color, #fff)
 		)
 		or
 		(
-			-webkit-text-stroke: var(--image-label-width-stroke, 0.05em) var(--image-label-color-stroke, #fff)
+			-webkit-text-stroke: var(--image-label-stroke-width, 0.05em) var(--image-label-stroke-color, #fff)
 		)
 ) {
 	.image_label {
-		-webkit-text-stroke: var(--image-label-width-stroke, 0.05em)
-			var(--image-label-color-stroke, #fff);
-		text-stroke: var(--image-label-width-stroke, 0.05em)
-			var(--image-label-color-stroke, #fff);
+		-webkit-text-stroke: var(--image-label-stroke-width, 0.05em)
+			var(--image-label-stroke-color, #fff);
+		text-stroke: var(--image-label-stroke-width, 0.05em)
+			var(--image-label-stroke-color, #fff);
 		text-shadow: none;
 	}
 }

@@ -2,12 +2,12 @@
 :root {
 	--main-font: 'Inter', sans-serif;
 	--accent-font: 'Press Start 2P', sans-serif;
-	--card-font-width-text: 400;
-	--card-font-width-title: 700;
+	--card-font-text-width: 400;
+	--card-font-title-width: 700;
 	--header-bg-color: #fff;
 	--border-color: #000;
-	--image-label-width-stroke: 0.02em;
-	--image-label-color-stroke: #fff;
+	--image-label-stroke-width: 0.02em;
+	--image-label-stroke-color: #fff;
 
 	/* --font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); */
 }
