@@ -47,7 +47,7 @@
 					<p class="card__special_text">
 						Место для ваших воспоминаний о начале обучения.
 					</p>
-					<div class="button_wrapper">
+					<div class="like_wrapper">
 						<button class="button_heart" aria-label="Like">
 							<svg
 								width="27"
@@ -78,7 +78,7 @@
 								<path d="M15 21H12V24H15V21Z" fill="black" />
 							</svg>
 						</button>
-						<button class="button button-like">
+						<button class="button">
 							<span class="button__text">Like</span>
 						</button>
 					</div>
@@ -107,7 +107,7 @@
 					<p class="card__special_text">
 						Место для ваших воспоминаний о начале обучения.
 					</p>
-					<div class="button_wrapper">
+					<div class="like_wrapper">
 						<button class="button_heart" aria-label="Like">
 							<svg
 								width="27"
@@ -138,7 +138,7 @@
 								<path d="M15 21H12V24H15V21Z" fill="black" />
 							</svg>
 						</button>
-						<button class="button button-like">
+						<button class="button">
 							<span class="button__text">Like</span>
 						</button>
 					</div>
@@ -165,7 +165,7 @@
 					<p class="card__special_text">
 						Место для ваших воспоминаний о начале обучения.
 					</p>
-					<div class="button_wrapper">
+					<div class="like_wrapper">
 						<button class="button_heart" aria-label="Like">
 							<svg
 								width="27"
@@ -196,7 +196,7 @@
 								<path d="M15 21H12V24H15V21Z" fill="black" />
 							</svg>
 						</button>
-						<button class="button button-like">
+						<button class="button">
 							<span class="button__text">Like</span>
 						</button>
 					</div>
@@ -225,7 +225,7 @@
 					<p class="card__special_text">
 						Место для ваших воспоминаний о начале обучения.
 					</p>
-					<div class="button_wrapper">
+					<div class="like_wrapper">
 						<button class="button_heart" aria-label="Like">
 							<svg
 								width="27"
@@ -256,7 +256,7 @@
 								<path d="M15 21H12V24H15V21Z" fill="black" />
 							</svg>
 						</button>
-						<button class="button button-like">
+						<button class="button">
 							<span class="button__text">Like</span>
 						</button>
 					</div>
@@ -286,7 +286,7 @@
 					<p class="card__special_text">
 						Место для ваших воспоминаний о начале обучения.
 					</p>
-					<div class="button_wrapper">
+					<div class="like_wrapper">
 						<button class="button_heart" aria-label="Like">
 							<svg
 								width="27"
@@ -317,7 +317,7 @@
 								<path d="M15 21H12V24H15V21Z" fill="black" />
 							</svg>
 						</button>
-						<button class="button button-like">
+						<button class="button">
 							<span class="button__text">Like</span>
 						</button>
 					</div>
@@ -344,7 +344,7 @@
 					<p class="card__special_text">
 						Место для ваших воспоминаний о начале обучения.
 					</p>
-					<div class="button_wrapper">
+					<div class="like_wrapper">
 						<button class="button_heart" aria-label="Like">
 							<svg
 								width="27"
@@ -375,7 +375,7 @@
 								<path d="M15 21H12V24H15V21Z" fill="black" />
 							</svg>
 						</button>
-						<button class="button button-like">
+						<button class="button">
 							<span class="button__text">Like</span>
 						</button>
 					</div>
@@ -404,7 +404,7 @@
 					<p class="card__special_text">
 						Место для ваших воспоминаний о начале обучения.
 					</p>
-					<div class="button_wrapper">
+					<div class="like_wrapper">
 						<button class="button_heart" aria-label="Like">
 							<svg
 								width="27"
@@ -435,7 +435,7 @@
 								<path d="M15 21H12V24H15V21Z" fill="black" />
 							</svg>
 						</button>
-						<button class="button button-like">
+						<button class="button">
 							<span class="button__text">Like</span>
 						</button>
 					</div>
@@ -466,7 +466,7 @@
 						Место, чтобы остановиться, подумать и написать, что вы чувствуете в
 						этой точке пути.
 					</p>
-					<div class="button_wrapper">
+					<div class="like_wrapper">
 						<button class="button_heart" aria-label="Like">
 							<svg
 								width="27"
@@ -497,7 +497,7 @@
 								<path d="M15 21H12V24H15V21Z" fill="black" />
 							</svg>
 						</button>
-						<button class="button button-like">
+						<button class="button">
 							<span class="button__text">Like</span>
 						</button>
 					</div>
@@ -517,16 +517,42 @@
 					<span class="button__text">Сохранить на память</span>
 				</button>
 			</footer>
+
+			<div class="dialog-container">
+				<div class="dialog-wrapper">
+					<svg viewBox="0 0 40 40" class="floppy-img">
+						<use href="./svg/floppy.svg#floppy"></use>
+					</svg>
+					<span class="button__text">Вставьте дискету, чтобы продолжить</span>
+				</div>
+				<button
+					type="button"
+					class="button"
+					onclick="window['dialog-id'].close()"
+				>
+					<span class="button__text">ок</span>
+				</button>
+			</div>
 		</main>
-		<script src="./scripts/like.js"></script>
 
 		<dialog id="dialog-id" class="dialog-id">
-			<h2>Подпишитесь на нашу рассылку</h2>
-			<form>
-				<label for="email">Введите вашу почту</label>
-				<input type="email" id="email" placeholder="test@example.com" />
-				<button type="submit">Подписаться</button>
-			</form>
+			<div class="dialog-container">
+				<div class="dialog-wrapper">
+					<svg viewBox="0 0 40 40" class="floppy-img">
+						<use href="./svg/floppy.svg#floppy"></use>
+					</svg>
+					<span class="button__text">Вставьте дискету, чтобы продолжить</span>
+				</div>
+				<button
+					type="button"
+					class="button"
+					onclick="window['dialog-id'].close()"
+				>
+					<span class="button__text">ок</span>
+				</button>
+			</div>
 		</dialog>
+
+		<script src="./scripts/like.js"></script>
 	</body>
 </html>
