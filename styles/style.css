@@ -174,9 +174,7 @@
 	align-items: center;
 	border: 2px solid var(--border-color, #000);
 	background-color: transparent;
-}
-
-.button__text {
+	cursor: pointer;
 	font-size: 14px;
 }
 
@@ -216,8 +214,8 @@
 }
 
 dialog {
-	padding: 0;
 	border: 2px solid var(--border-color, #000);
+	padding: 0;
 	background-color: #fff;
 }
 
@@ -230,18 +228,19 @@ dialog::backdrop {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	padding-inline: 32px;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	padding-inline: 32px;
+	line-height: 150%; /* 21px */
+	text-transform: uppercase;
 
 	inline-size: clamp(341px, 15vw, 357px);
-	text-transform: uppercase;
-	line-height: 150%; /* 21px */
 }
 
 .dialog-wrapper {
 	display: flex;
 	gap: 20px;
+	font-size: 14;
 }
 
 .dialog-container .floppy-img {
@@ -252,9 +251,9 @@ dialog::backdrop {
 }
 
 .dialog-container .button {
+	line-height: 90%; /* 12.6px */
 	inline-size: 100%;
 	block-size: 38px;
-	line-height: 90%; /* 12.6px */
 }
 
 body:has(dialog[open]) {
@@ -271,6 +270,8 @@ body:has(dialog[open]) {
 		font-variation-settings: 'wght' var(--card-font-title-width, 700);
 	}
 
+	.footer,
+	.dialog-wrapper,
 	.image_label,
 	.button__text {
 		font-family: var(--accent-font, sans-serif);
