@@ -254,14 +254,7 @@ dialog::backdrop {
 .dialog-container .button {
 	inline-size: 100%;
 	block-size: 38px;
-	/* padding-block: 12px; */
 	line-height: 90%; /* 12.6px */
-}
-
-.dialog-container {
-	margin: auto;
-	margin-bottom: 500px;
-	background-color: #fff;
 }
 
 body:has(dialog[open]) {
