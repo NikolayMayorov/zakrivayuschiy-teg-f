@@ -8,6 +8,7 @@
 	--border-color: #000;
 	--image-label-stroke-width: 0.02em;
 	--image-label-stroke-color: #fff;
+	--text-shadow-color: #9ACD32;
 
 	/* --font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); */
 }

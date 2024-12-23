@@ -161,6 +161,7 @@
 .card__text {
 	font-size: 18px;
 	line-height: 21px; /* 116.667% */
+	text-shadow: 0 0 2px var(--text-shadow-color, #9ACD32);
 }
 
 .card__special_text {
@@ -237,10 +238,13 @@ dialog::backdrop {
 	inline-size: clamp(341px, 15vw, 357px);
 }
 
+.dialog-container {
+	font-size: 14;
+}
+
 .dialog-wrapper {
 	display: flex;
 	gap: 20px;
-	font-size: 14;
 }
 
 .dialog-container .floppy-img {
@@ -271,7 +275,7 @@ body:has(dialog[open]) {
 	}
 
 	.footer,
-	.dialog-wrapper,
+	.dialog-container,
 	.image_label,
 	.button__text {
 		font-family: var(--accent-font, sans-serif);
