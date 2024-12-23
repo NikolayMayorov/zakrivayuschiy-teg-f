@@ -12,7 +12,18 @@
 
 .page {
 	font-family: var(--accent-font, sans-serif);
-	background-image: url(../images/background.png);
+
+	/* background-image: var(--background-image, url(../images/background.png)); */
+
+	background-image: repeating-linear-gradient(
+			to right,
+			#d3d3d3 2px,
+			rgba(0, 0, 0, 0) 4px
+		),
+		repeating-linear-gradient(to bottom, #d3d3d3 2px, rgba(0, 0, 0, 0) 4px),
+		linear-gradient(to bottom, #e7e7e7, #1a1a1a),
+		var(--background-image, url(../images/background.png));
+
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -161,7 +172,7 @@
 .card__text {
 	font-size: 18px;
 	line-height: 21px; /* 116.667% */
-	text-shadow: 0 0 2px var(--text-shadow-color, #9ACD32);
+	text-shadow: 0 0 2px var(--text-shadow-color, #9acd32);
 }
 
 .card__special_text {
