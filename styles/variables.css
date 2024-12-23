@@ -2,13 +2,14 @@
 :root {
 	--main-font: 'Inter', sans-serif;
 	--accent-font: 'Press Start 2P', sans-serif;
+	--button-text-color: #fff;
 	--card-font-text-width: 400;
 	--card-font-title-width: 700;
 	--header-bg-color: #fff;
 	--border-color: #000;
 	--image-label-stroke-width: 0.02em;
 	--image-label-stroke-color: #fff;
-	--text-shadow-color: #9ACD32;
+	--text-shadow-color: #9acd32;
 	--background-image: url(../images/background.png);
 
 	/* --font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); */
