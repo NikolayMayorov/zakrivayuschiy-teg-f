@@ -371,31 +371,31 @@ body:has(dialog[open]) {
 	}
 }
 
-/* @supports (font-variation-settings: normal) { */
-.page {
-	font-family: var(--main-font, sans-serif);
-	font-variation-settings: 'wght' var(--card-font-text-width, 400), 'slnt' 0;
-}
+@supports (font-variation-settings: normal) {
+	.page {
+		font-family: var(--main-font, sans-serif);
+		font-weight: var(--card-font-text-width, 400);
+	}
 
-.card__title {
-	font-variation-settings: 'wght' var(--card-font-title-width, 700), 'slnt' 0;
-}
+	.card__title {
+		font-weight: var(--card-font-title-width, 700);
+	}
 
-.footer,
-.dialog-container,
-.image_label,
-.button__text {
-	font-family: var(--accent-font, sans-serif);
-	font-variation-settings: 'wght' var(--card-font-text-width, 400), 'slnt' 0;
-}
+	.footer,
+	.dialog-container,
+	.image_label,
+	.button__text {
+		font-family: var(--accent-font, sans-serif);
+		font-weight: var(--card-font-text-width, 400);
+	}
 
-.image_label {
-	text-shadow: -1px 0 var(--image-label-stroke-color, #fff),
-		0 1px var(--image-label-stroke-color, #fff),
-		1px 0 var(--image-label-stroke-color, #fff),
-		0 -1px var(--image-label-stroke-color, #fff);
+	.image_label {
+		text-shadow: -1px 0 var(--image-label-stroke-color, #fff),
+			0 1px var(--image-label-stroke-color, #fff),
+			1px 0 var(--image-label-stroke-color, #fff),
+			0 -1px var(--image-label-stroke-color, #fff);
+	}
 }
-/* } */
 
 @supports (
 	(
