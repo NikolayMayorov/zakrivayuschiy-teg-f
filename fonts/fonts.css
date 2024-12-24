@@ -22,5 +22,5 @@
 		url(./Inter-Variable.woff2) format('woff2-variations');
 	font-weight: 100 900;
 	font-style: oblique -10deg 0deg;
-	font-variation-settings: 'wght' 400, 'wght' 700, 'slnt' 0;
+	font-variation-settings: 'wght' 400, 'wght' 700, 'wght' 785, 'slnt' 0;
 }
