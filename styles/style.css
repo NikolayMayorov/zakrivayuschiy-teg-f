@@ -185,10 +185,10 @@
 	justify-content: center;
 	align-items: center;
 	border: 2px solid var(--border-color, #000);
+	outline: none;
+	font-size: 14px;
 	background-color: transparent;
 	cursor: pointer;
-	font-size: 14px;
-	outline: none;
 }
 
 .button__text {
@@ -210,10 +210,48 @@
 }
 
 .button_heart {
-	border: none;
 	padding: 0;
-	background-color: transparent;
 	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: border-color 0.9s ease;
+}
+
+.button_heart:focus-visible {
+	border-color: var(--border-color, #000);
+}
+
+/* .like-icon:hover .core,
+.like-icon:hover .main-body {
+	fill: var(--heart-contour-color, #000);
+} */
+
+.like-icon:hover .core,
+.like-icon:hover .main-body {
+	fill: #000;
+}
+
+.like-icon:not(:hover) .core {
+	transition: fill 0.3s 0.3s;
+}
+
+.like-icon:not(:hover) .main-body {
+	transition: fill 0.3s;
+}
+
+.core {
+	fill: transparent;
+	transition: fill 0.3s;
+}
+
+.main-body {
+	fill: transparent;
+	transition: fill 0.3s 0.05s;
+}
+
+.sparks {
+	opacity: 0;
 }
 
 .button {
@@ -230,11 +268,11 @@
 	position: absolute;
 	top: 0;
 	left: -100%;
-	background-color: #000;
 	width: 200%;
 	height: 200%;
-	transform: scaleX(0);
+	background-color: #000;
 	transition: transform 0.5s ease-in-out;
+	transform: scaleX(0);
 }
 
 .button:hover::before {
@@ -255,10 +293,10 @@
 }
 
 .floppy-img {
+	color: #fff;
 	inline-size: 21px;
 	block-size: 21px;
 	mix-blend-mode: difference;
-	color: #fff;
 }
 
 dialog {

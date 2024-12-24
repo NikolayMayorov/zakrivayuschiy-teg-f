@@ -12,5 +12,8 @@
 	--text-shadow-color: #9acd32;
 	--background-image: url(../images/background.png);
 
-	/* --font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); */
+	--heart-contour-color: #000;
+	--heart-sparks-color: #ff0000;
+	--heart-core-color: #ff0000;
+	--heart-main-body-color: #fff;
 }
