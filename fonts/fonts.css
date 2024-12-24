@@ -20,7 +20,7 @@
 	src: local('Inter'),
 		url(./Inter-Variable.woff2) format('woff2 supports variations'),
 		url(./Inter-Variable.woff2) format('woff2-variations');
-	font-weight: 400 785;
+	font-weight: 100 900;
 	font-style: oblique -10deg 0deg;
-	font-variation-settings: 'wdth' 400, 'wdth' 785;
+	font-variation-settings: 'wght' 400, 'wght' 700, 'slnt' 0;
 }
