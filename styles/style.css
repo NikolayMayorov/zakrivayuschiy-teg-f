@@ -286,7 +286,6 @@
 	padding-block: 18px;
 	outline: none;
 	font-size: 14px;
-	background-color: transparent;
 	background-color: #fff;
 	cursor: pointer;
 }
@@ -325,9 +324,6 @@ dialog::backdrop {
 	line-height: 150%;
 	text-transform: uppercase;
 	inline-size: clamp(341px, 15vw, 357px);
-}
-
-.dialog-container {
 	font-size: 14;
 }
 
