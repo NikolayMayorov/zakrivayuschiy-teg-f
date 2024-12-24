@@ -12,9 +12,6 @@
 
 .page {
 	font-family: var(--accent-font, sans-serif);
-
-	/* background-image: var(--background-image, url(../images/background.png)); */
-
 	background-image: repeating-linear-gradient(
 			to right,
 			#d3d3d3 2px,
@@ -35,7 +32,6 @@
 .container {
 	margin-inline: auto;
 	margin-block: 0;
-	/* max-inline-size: 700px; */
 	inline-size: clamp(375px, 50vw, 700px);
 }
 
@@ -48,16 +44,10 @@
 	margin-block-start: 102px;
 	margin-block-end: 100px;
 	border: 2px solid var(--border-color, #000);
-	/* padding-inline: clamp(14px, 5vw, 120.5px); */
-	/* padding-block: clamp(120px, 12vw, 128px); */
-	/* padding-inline: 120.5px; 
-	padding-block: 128px; */
 	font-family: var(--accent-font, serif), serif;
 	text-transform: uppercase;
 	background-color: var(--header-bg-color, #fff);
-	/* inline-size: clamp(375px, 50vw, 700px); */
 	block-size: clamp(327px, 50vi, 368px);
-	/* inline-size: 700px; */
 }
 
 .header__title {
@@ -69,10 +59,6 @@
 }
 
 .card {
-	/* display: flex;
-	flex-direction: column;
-	gap: 25px; */
-	/* margin-block-start: 100px; */
 	margin-block-end: 51px;
 	border: 2px solid var(--border-color, #000);
 	font-size: 18px;
@@ -100,11 +86,9 @@
 .card:nth-of-type(2) .card__image {
 	filter: sepia(10%) brightness(108%) hue-rotate(209deg) contrast(137%)
 		invert(8%);
-	/* mix-blend-mode: hard-light; */
 }
 
 .card:nth-of-type(3) .card__image {
-	/* mix-blend-mode: hard-light; */
 	filter: contrast(91%);
 }
 
@@ -115,7 +99,6 @@
 
 .card:nth-of-type(5) .card__image {
 	filter: sepia(70%) hue-rotate(0.47turn) brightness(110%);
-	/* mix-blend-mode: hard-light; */
 	mix-blend-mode: hard-light;
 }
 
@@ -125,7 +108,6 @@
 }
 
 .card:nth-of-type(7) .card__image {
-	/* mix-blend-mode: hard-light; */
 	filter: blur(15px);
 }
 
@@ -148,12 +130,10 @@
 .card__image {
 	display: block;
 	margin: 0;
-	/* border-top: 2px solid var(--border-color, #000); */
 	padding: 0;
 	object-fit: cover;
 	inline-size: 100%;
 	block-size: 100%;
-	/* max-block-size: 100%; */
 }
 
 .card__content_wrapper {
@@ -342,9 +322,8 @@ dialog::backdrop {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	padding-inline: 32px;
-	line-height: 150%; /* 21px */
+	line-height: 150%;
 	text-transform: uppercase;
-
 	inline-size: clamp(341px, 15vw, 357px);
 }
 
@@ -358,15 +337,12 @@ dialog::backdrop {
 }
 
 .dialog-container .floppy-img {
-	/* block-size: 39px;
-	inline-size: 39px; */
-	width: 80px; /* Задает ширину SVG */
-	height: 80px; /* Задает высоту SVG */
+	width: 80px;
+	height: 80px;
 }
 
-/* !!!!!!!! */
 .dialog-container .button-save {
-	line-height: 90%; /* 12.6px */
+	line-height: 90%;
 	inline-size: 100%;
 	block-size: 38px;
 }
@@ -418,9 +394,6 @@ body:has(dialog[open]) {
 	}
 
 	.image_label {
-		/* font-family: var(--accent-font, sans-serif);
-		font-variation-settings: 'wght' var(--card-font-text-width, 400); */
-
 		text-shadow: -1px 0 var(--image-label-stroke-color, #fff),
 			0 1px var(--image-label-stroke-color, #fff),
 			1px 0 var(--image-label-stroke-color, #fff),
@@ -448,14 +421,9 @@ body:has(dialog[open]) {
 }
 
 @media (width <= 375px) {
-	/* !!!!!!!!! */
-	/* .button {
-		flex-direction: column;
-	} */
-
 	.button-save {
-		padding-block: 15px;
 		flex-direction: column;
+		padding-block: 15px;
 	}
 
 	.dialog-container {
