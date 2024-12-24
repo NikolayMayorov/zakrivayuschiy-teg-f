@@ -374,11 +374,11 @@ body:has(dialog[open]) {
 @supports (font-variation-settings: normal) {
 	.page {
 		font-family: var(--main-font, sans-serif);
-		font-variation-settings: 'wght' var(--card-font-text-width, 400);
+		font-variation-settings: 'wdth' var(--card-font-text-width, 400);
 	}
 
 	.card__title {
-		font-variation-settings: 'wght' var(--card-font-title-width, 700);
+		font-variation-settings: 'wdth' var(--card-font-title-width, 700);
 	}
 
 	.footer,
@@ -386,7 +386,7 @@ body:has(dialog[open]) {
 	.image_label,
 	.button__text {
 		font-family: var(--accent-font, sans-serif);
-		font-variation-settings: 'wght' var(--card-font-text-width, 400);
+		font-variation-settings: 'wdth' var(--card-font-text-width, 400);
 	}
 
 	.image_label {
