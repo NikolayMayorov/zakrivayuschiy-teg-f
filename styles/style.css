@@ -14,7 +14,6 @@
 	/* font-family: var(--accent-font, sans-serif); */
 	font-family: var(--main-font, sans-serif);
 	font-weight: var(--card-font-text-width, 400);
-	font-variation-settings: 'wght' 400, 'wght' 700, 'wght' 785, 'slnt' 0;
 	background-image: repeating-linear-gradient(
 			to right,
 			#d3d3d3 2px,
@@ -28,6 +27,7 @@
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+	font-variation-settings: 'wght' 400, 'wght' 700, 'slnt' 0;
 	min-inline-size: 320px;
 	min-block-size: 100dvb;
 }
@@ -72,6 +72,7 @@
 	border-bottom: 2px solid var(--border-color, #000);
 	padding-inline: 10px;
 	padding-block: 5px;
+	font-weight: var(--card-font-title-width, 700);
 	font-size: 18px;
 	line-height: 21.78px;
 }
@@ -125,6 +126,8 @@
 	right: clamp(11px, 3vi, 25px);
 	z-index: 1;
 	color: white;
+	font-family: var(--accent-font, sans-serif);
+	font-weight: var(--card-font-text-width, 400);
 	font-size: 14px;
 	text-transform: uppercase;
 	mix-blend-mode: difference;
@@ -163,6 +166,8 @@
 	position: relative;
 	z-index: 1;
 	color: var(--button-text-color, #fff);
+	font-family: var(--accent-font, sans-serif);
+	font-weight: var(--card-font-text-width, 400);
 	mix-blend-mode: difference;
 }
 
@@ -297,6 +302,8 @@
 	display: flex;
 	justify-content: center;
 	margin-block-end: 100px;
+	font-family: var(--accent-font, sans-serif);
+	font-weight: var(--card-font-text-width, 400);
 }
 
 .floppy-img {
@@ -324,10 +331,12 @@ dialog::backdrop {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	padding-inline: 32px;
+	font-family: var(--accent-font, sans-serif);
+	font-weight: var(--card-font-text-width, 400);
+	font-size: 14;
 	line-height: 150%;
 	text-transform: uppercase;
 	inline-size: clamp(341px, 15vw, 357px);
-	font-size: 14;
 }
 
 .dialog-wrapper {
@@ -376,22 +385,26 @@ body:has(dialog[open]) {
 
 @supports (font-variation-settings: normal) {
 	.page {
-		font-family: var(--main-font, sans-serif);
-		font-weight: var(--card-font-text-width, 400);
-		font-variation-settings: 'wght' 400, 'wght' 700, 'wght' 785, 'slnt' 0;
+		/* font-family: var(--main-font, sans-serif);
+		font-weight: var(--card-font-text-width, 400); */
+		font-variation-settings: 'wght' 400, 'wght' 700, 'slnt' 0;
 	}
 
-	.card__title {
+	.card__text {
+		font-variation-settings: 'wght' 400, 'slnt' 0;
+	}
+
+	/* .card__title {
 		font-weight: var(--card-font-title-width, 700);
-	}
+	} */
 
-	.footer,
+	/* .footer,
 	.dialog-container,
 	.image_label,
 	.button__text {
 		font-family: var(--accent-font, sans-serif);
 		font-weight: var(--card-font-text-width, 400);
-	}
+	} */
 
 	.image_label {
 		text-shadow: -1px 0 var(--image-label-stroke-color, #fff),
