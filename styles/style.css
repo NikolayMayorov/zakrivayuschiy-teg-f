@@ -377,6 +377,7 @@ body:has(dialog[open]) {
 	.page {
 		font-family: var(--main-font, sans-serif);
 		font-weight: var(--card-font-text-width, 400);
+		font-variation-settings: 'wght' 400, 'wght' 700, 'wght' 785, 'slnt' 0;
 	}
 
 	.card__title {
