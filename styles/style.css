@@ -14,6 +14,7 @@
 	/* font-family: var(--accent-font, sans-serif); */
 	font-family: var(--main-font, sans-serif);
 	font-weight: var(--card-font-text-width, 400);
+	font-variation-settings: 'wght' 400, 'wght' 700, 'wght' 785, 'slnt' 0;
 	background-image: repeating-linear-gradient(
 			to right,
 			#d3d3d3 2px,
