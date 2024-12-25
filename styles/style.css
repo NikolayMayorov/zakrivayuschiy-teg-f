@@ -14,13 +14,13 @@
 	font-family: var(--main-font, sans-serif);
 	font-weight: var(--card-font-text-width, 400);
 	background-image: var(--background-image, url(./images/background.png));
-	/* background-image: repeating-linear-gradient(
+	background-image: repeating-linear-gradient(
 			to right,
 			#d3d3d3 2px,
 			rgba(0, 0, 0, 0) 4px
 		),
 		repeating-linear-gradient(to bottom, #d3d3d3 2px, rgba(0, 0, 0, 0) 4px),
-		linear-gradient(to bottom, #e7e7e7, #1a1a1a); */
+		linear-gradient(to bottom, #e7e7e7, #1a1a1a);
 
 	background-repeat: no-repeat;
 	background-position: center;
