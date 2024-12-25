@@ -11,7 +11,9 @@
 */
 
 .page {
-	font-family: var(--accent-font, sans-serif);
+	/* font-family: var(--accent-font, sans-serif); */
+	font-family: var(--main-font, sans-serif);
+	font-weight: var(--card-font-text-width, 400);
 	background-image: repeating-linear-gradient(
 			to right,
 			#d3d3d3 2px,
