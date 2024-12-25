@@ -13,10 +13,17 @@
 .page {
 	font-family: var(--main-font, sans-serif);
 	font-weight: var(--card-font-text-width, 400);
-	background-image: linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+	background-image: repeating-linear-gradient(
+		to right,
+		#d3d3d3 2px,
+		rgba(0, 0, 0, 0) 4px
+	);
+
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
+	font-variation-settings: 'wght' 400, 'wght' 700, 'slnt' 0;
 	min-inline-size: 320px;
 	min-block-size: 100dvb;
 }
