@@ -88,8 +88,7 @@
 }
 
 .filter-sepia {
-	filter: sepia(10%) brightness(108%) hue-rotate(209deg) contrast(137%)
-		invert(8%);
+	filter: sepia(10%);
 }
 
 .filter-contrast {
