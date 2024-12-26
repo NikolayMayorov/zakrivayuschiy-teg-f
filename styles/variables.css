@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
 	--main-font: 'Inter', sans-serif;
-	--accent-font: 'Press Start 2P', sans-serif;
+	--accent-font: 'Press Start 2P', fantasy;
 	--button-text-color: #fff;
 	--card-font-text-width: 400;
 	--card-font-title-width: 700;
@@ -11,7 +11,6 @@
 	--image-label-stroke-color: #fff;
 	--text-shadow-color: #9acd32;
 	--background-image: url(../images/background.png);
-
 	--heart-contour-color: #000;
 	--heart-sparks-color: #ff0000;
 	--heart-core-color: #ff0000;
