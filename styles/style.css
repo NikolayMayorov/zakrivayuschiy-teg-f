@@ -16,8 +16,20 @@
 	/* background-image: var(--background-image, url(./images/background.png)); */
 	background-image: var(
 		--background-gradient,
-		repeating-linear-gradient(to right, #d3d3d3 2px, transparent 2px),
-		repeating-linear-gradient(to bottom, #d3d3d3 2px, transparent 2px),
+		repeating-linear-gradient(
+			to right,
+			#d3d3d3 0px,
+			#d3d3d3 2px,
+			transparent 2px,
+			transparent 4px
+		),
+		repeating-linear-gradient(
+			to bottom,
+			#d3d3d3 0px,
+			#d3d3d3 2px,
+			transparent 2px,
+			transparent 4px
+		),
 		linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%)
 	);
 	background-repeat: no-repeat;
@@ -145,7 +157,7 @@
 .card__text {
 	font-size: 18px;
 	line-height: 21px;
-	text-shadow: 0 0 2px var(--text-shadow-color, #9acd32);
+	/* text-shadow: 0 0 2px var(--text-shadow-color, #9acd32); */
 }
 
 .card__special_text {
@@ -257,19 +269,30 @@
 }
 
 .card__like-button {
-	position: relative;
-	overflow: hidden;
-	font-size: 14px;
-	background-color: transparent;
 	block-size: 38px;
 	inline-size: 130px;
 }
 
-.card__like-button:focus {
+.button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid var(--border-color, #000);
+	outline: none;
+	overflow: hidden;
+	font-family: var(--accent-font, sans-serif);
+	font-weight: var(--card-font-text-width, 400);
+	font-size: 14px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.button:focus {
 	box-shadow: 2px 2px 0 var(--border-color, #000);
 }
 
-.card__like-button::before {
+.button::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -281,8 +304,22 @@
 	transform: scaleX(0);
 }
 
-.card__like-button:hover::before {
+.button:hover::before {
 	transform: scaleX(1);
+}
+
+.button-save {
+	gap: 8px;
+	margin-inline: auto;
+	padding-inline: 20px;
+	padding-block: 16px;
+	background-color: #fff;
+}
+
+.button-ok {
+	background-color: #fff;
+	block-size: 38px;
+	inline-size: clamp(257px, 30vw, 293px);
 }
 
 .floppy-img {
@@ -295,12 +332,18 @@
 .dialog {
 	box-sizing: content-box;
 	border: 2px solid var(--border-color, #000);
+	padding: 0;
 	font-family: var(--accent-font, sans-serif);
 	font-weight: var(--card-font-text-width, 400);
 	font-size: 14px;
 	line-height: 150%;
 	background-color: #fff;
 	inline-size: clamp(341px, 15vw, 357px);
+
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
 }
 
 .dialog::backdrop {
@@ -326,31 +369,6 @@
 	width: 80px;
 	height: 80px;
 	padding-bottom: 16px;
-}
-
-.button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid var(--border-color, #000);
-	outline: none;
-	font-family: var(--accent-font, sans-serif);
-	font-weight: var(--card-font-text-width, 400);
-	font-size: 14px;
-	background-color: #fff;
-	cursor: pointer;
-}
-
-.button-save {
-	gap: 8px;
-	margin-inline: auto;
-	padding-inline: 20px;
-	padding-block: 16px;
-}
-
-.button-ok {
-	block-size: 38px;
-	inline-size: clamp(257px, 30vw, 293px);
 }
 
 body:has(dialog[open]) {
@@ -410,7 +428,7 @@ main {
 		padding-inline: 42px;
 	}
 
-	.floppy-img {
+	button .floppy-img {
 		inline-size: 28px;
 		block-size: 28px;
 	}
